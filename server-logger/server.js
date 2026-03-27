@@ -49,6 +49,6 @@ server.on('request', async(req, res) => {
     }
     else {
         res.writeHead(404);
-        res.end('Page Not Found');
+        return res.end('Page Not Found');
     }
 });
